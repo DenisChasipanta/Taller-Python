@@ -1,0 +1,25 @@
+{% extends "core/base.html" %} {% block title %}Portada{% endblock %} 
+{%block background%} {% load static %} {%static 'core/img/peli.jpg'%} {%endblock%}
+{%block header%}
+<h1>Tienda de Películas</h1>
+<span class="subheading"
+  >Descubre el fascinante mundo del cine en nuestra tienda en línea. Sumérgete
+  en una colección cuidadosamente seleccionada de películas que abarcan géneros,
+  épocas y culturas. Desde éxitos de taquilla hasta joyas cinematográficas
+  ocultas, ofrecemos una experiencia única para cinéfilos de todos los
+  gustos.</span
+>
+{%endblock%} {% block content %}
+<div class="container mt-3">
+    <img src="{% static 'core/img/Img.jpg'%}" class="float-start" width="40%" height="50%">
+    <img src="{% static 'core/img/Img2.jpg'%}" class="float-end" width="50%" height="50%">
+  </div>
+<h1>Explora Nuestro Catálogo</h1>
+
+<p>Diversidad Cinematográfica: Desde emocionantes películas de acción hasta conmovedoras historias de drama, nuestro catálogo abarca todos los géneros.</p>
+<p>Clásicos y Novedades: Disfruta de los clásicos atemporales y mantente al día con las últimas novedades del mundo del cine.</p>
+<p>Variedad de Formatos: Ya sea que prefieras DVDs, Blu-rays o contenido digital, tenemos opciones para satisfacer todas tus preferencias.</p>
+<h1>Experiencia de Compra Inigualable</h1>
+<p>Navegación Intuitiva: Explora fácilmente nuestro sitio con una interfaz de usuario intuitiva y amigable.</p>
+<p>Reseñas y Recomendaciones: Encuentra la película perfecta con reseñas de clientes y recomendaciones personalizadas.</p>
+{% endblock %}

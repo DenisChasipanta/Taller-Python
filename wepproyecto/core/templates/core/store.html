@@ -1,0 +1,51 @@
+{% extends "core/base.html" %}
+{% block title %}Tienda{% endblock  %}
+{%block background%} {% load static %} {%static 'core/img/portada.jpg'%} {%endblock%}
+{%block header%}
+<h1>Tienda de Películas</h1>
+<span class="subheading"
+  >Descubre el fascinante mundo del cine en nuestra tienda en línea. Sumérgete
+  en una colección cuidadosamente seleccionada de películas que abarcan géneros,
+  épocas y culturas. Desde éxitos de taquilla hasta joyas cinematográficas
+  ocultas, ofrecemos una experiencia única para cinéfilos de todos los
+  gustos.</span
+>
+{%endblock%}
+{% block content %}
+<div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/rio.jpg'%}"alt="" />
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Rio</h2>
+        <p>
+          Nacido en... lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea
+          nobis sit soluta odio.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum
+          ullam eveniet pariatur voluptates odit...
+        </p>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/rapidos.jpg'%}"alt="" />
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">RAPIDOS Y FURIOSOS</h2>
+          <p>
+            Nacido en... lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea
+            nobis sit soluta odio.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum
+            ullam eveniet pariatur voluptates odit...
+          </p>
+        </div>
+      </div>
+  </div>
+{% endblock  %}
